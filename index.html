@@ -10,7 +10,7 @@
             name="description"
             content="A proof of ownership and belonging, a token on Solana blockchain."
         />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sanssolvent.com/" />
@@ -42,7 +42,8 @@
         }
 
         body, html {
-            height: 100%;
+            height: 100vh;
+            height: 100dvh;
             margin: 0;
             padding: 0;
             font: 14px var(--font-main);
@@ -54,8 +55,8 @@
             flex-direction: column;
             justify-content: flex-end;
             align-items: center;
-            min-height: 100vh;
             padding: var(--spacing-medium);
+            padding-bottom: max(var(--spacing-medium), env(safe-area-inset-bottom, 20px));
             box-sizing: border-box;
         }
 
