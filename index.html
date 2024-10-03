@@ -33,6 +33,7 @@
         />
         <style>
         :root {
+            --spacing-extralarge: 100px;
             --spacing-large: 80px;
             --spacing-medium: 40px;
             --spacing-small: 20px;
@@ -68,12 +69,10 @@
         a:hover { opacity: 0.75; }
 
         #logo {
-            font: 800 17px var(--font-logo);
-            padding: 2px 12px;
-            border: 3px solid currentColor;
-            border-radius: 25px;
+            font: 800 30px/1 var(--font-logo);
             white-space: nowrap;
-            margin-bottom: 30px;
+            margin-bottom: var(--spacing-extralarge);
+            letter-spacing: 0.2em;
         }
 
         .description, .links, .note, footer {
@@ -103,6 +102,7 @@
 
         @media (max-width: 768px) {
             :root {
+                --spacing-extralarge: 80px;
                 --spacing-large: 40px;
                 --spacing-medium: 20px;
                 --spacing-small: 10px;
@@ -111,9 +111,10 @@
         </style>
     </head>
     <body>
-        <div id="logo" role="heading" aria-level="1">SANS SOLVENT</div>
+        <div id="logo">SA<br>SO</div>
+        <p class="description" role="heading" aria-level="1">SANS SOLVENT</p>
         <p class="description">
-            A proof of ownership and belonging,<br />a token on Solana blockchain.
+            A proof of ownership and belonging,<br>a token on Solana blockchain.
         </p>
 
         <p class="description" style="padding-bottom: var(--spacing-large);">
