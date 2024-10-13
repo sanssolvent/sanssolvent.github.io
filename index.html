@@ -3,126 +3,78 @@
     <head>
         <meta charset="UTF-8" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
         <title>SANS SOLVENT</title>
-        <meta
-            name="description"
-            content="A proof of ownership and belonging, a token on Solana blockchain."
-        />
+        <meta name="description" content="An NFT collection on Solana blockchain." />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://sanssolvent.com/" />
         <meta property="og:title" content="SANS SOLVENT" />
-        <meta
-            property="og:description"
-            content="A proof of ownership and belonging, a token on Solana blockchain."
-        />
+        <meta property="og:description" content="An NFT collection on Solana blockchain." />
         <meta name="twitter:card" content="summary" />
         <meta name="twitter:url" content="https://sanssolvent.com/" />
         <meta name="twitter:title" content="SANS SOLVENT" />
-        <meta
-            name="twitter:description"
-            content="A proof of ownership and belonging, a token on Solana blockchain."
-        />
-
-        <link
-            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;700&family=Nunito:wght@800&display=swap"
-            rel="stylesheet"
-        />
+        <meta name="twitter:description" content="An NFT collection on Solana blockchain." />
+        <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;600;700" rel="stylesheet" />
         <style>
+
         :root {
-            --spacing-extralarge: 100px;
-            --spacing-large: 80px;
-            --spacing-medium: 40px;
-            --spacing-small: 20px;
-            --max-width: 700px;
-            --font-main: "IBM Plex Mono", monospace, sans-serif;
-            --font-logo: "Nunito", Arial, sans-serif;
+            --text-color: #ccc;
+            --bg-color: #000;
         }
 
-        body, html {
-            height: 100vh;
-            height: 100dvh;
-            margin: 0;
-            padding: 0;
-            font: 14px var(--font-main);
-            background: #eee;
+        html, body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
         }
 
         body {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-end;
-            align-items: center;
-            padding: var(--spacing-medium);
-            padding-bottom: max(var(--spacing-medium), env(safe-area-inset-bottom, 20px));
+          font-family: "IBM Plex Mono", monospace;
+          color: var(--text-color);
+          background-color: var(--bg-color);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+
+        .content {
+            max-width: 500px;
+            width: 100%;
+            padding: 3.5em 2em 1em;
             box-sizing: border-box;
-        }
-
-        a {
-            color: currentColor;
-            text-decoration: none;
-        }
-
-        a:hover { opacity: 0.75; }
-
-        #logo {
-            font: 800 30px/1 var(--font-logo);
-            white-space: nowrap;
-            margin-bottom: var(--spacing-extralarge);
-            letter-spacing: 0.2em;
-        }
-
-        .description, .links, .note, footer {
-            max-width: var(--max-width);
             text-align: center;
         }
 
-        .links { padding-bottom: var(--spacing-large); }
-
-        .note, footer {
-            font-size: 12px;
-            line-height: 1.5;
+        .image {
+          width: 100%;
+          max-width: 150px;
+          height: auto;
+          border-radius: 8px;
+          display: block;
+          margin: 0 auto 2em;
         }
 
-        footer {
-            width: 100%;
-            opacity: 0.75;
-            padding-top: var(--spacing-medium);
+        a {
+          color: var(--text-color);
+          text-decoration: none;
         }
 
-        @media (prefers-color-scheme: dark) {
-            body {
-                background-color: #111;
-                color: #ffecd7;
-            }
+        a:hover {
+            opacity: 0.5;
         }
 
-        @media (max-width: 768px) {
-            :root {
-                --spacing-extralarge: 80px;
-                --spacing-large: 40px;
-                --spacing-medium: 20px;
-                --spacing-small: 10px;
-            }
+        p {
+          font-size:  0.8em;
+          line-height: 2em;
+          color:  var(--text-color);
         }
+
         </style>
     </head>
     <body>
-        <div id="logo">SA<br>SO</div>
-        <p class="description" role="heading" aria-level="1">SANS SOLVENT</p>
-        <p class="description">
-            A proof of ownership and belonging,<br>a token on Solana blockchain.
-        </p>
-
-        <p class="description" style="padding-bottom: var(--spacing-large);">
-            Coming soon
-        </p>
-
-        <footer>
-            &copy; 2024 SANS SOLVENT | <a href="mailto:sanssolvent@gmail.com"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align: text-bottom;"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> Email</a> | <a href="https://solscan.io/account/615kTN54Ac2KqS2AjX1nqZjrnuWcnWRVdYTMbmYju4Ji" target="_blank" rel="noopener noreferrer">615k...u4Ji</a>
-        </footer>
-    </body>
+		<div class="content">
+	    <img src="image.png" class="image">
+		<p><a href="mailto:sanssolvent@gmail.com">Email</a> | <a href="https://solscan.io/account/615kTN54Ac2KqS2AjX1nqZjrnuWcnWRVdYTMbmYju4Ji" target="_blank" rel="noopener noreferrer">615k...u4Ji</a></p>
+		</div>
+	</body>
 </html>
